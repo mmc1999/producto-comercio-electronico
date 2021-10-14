@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/lightbox.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- LIBRERIA PARA EL ZOOM-->
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <header>
+    <div class="primerDivHeader">
+      <img src="../images/icon-menu.svg" alt="icono del menu" class="menuMobile">
+      <img src="../images/logo.svg" alt="imagen del logo" class="logo">
+    </div>
+    <nav class="nav">
+      <img src="../images/icon-close.svg" alt="imagen para cerrar el menu mobile" class="cerrarMenu">
+      <ul class="ul">
+        <li class="li"><a href="#" class="enlaceMenuMobile">Collections</a></li>
+        <li class="li"><a href="#" class="enlaceMenuMobile">Men</a></li>
+        <li class="li"><a href="#" class="enlaceMenuMobile">Women</a></li>
+        <li class="li"><a href="#" class="enlaceMenuMobile">About</a></li>
+        <li class="li"><a href="#" class="enlaceMenuMobile">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="segundoDivHeader">
+      <span class="elementosDelCarrito"></span>
+      <img src="../images/icon-cart.svg" alt="icono del carrito de compras" class="carritoDeCompras2">
+      <img src="../images/image-avatar.png" alt="icono del avatar de la persona" class="avatar">
+      <div class="divCarrito top">
+        <div class="primerDivCarrito">
+          <p class="cart">Cart</p>
+          <span class="lineaCarrito"></span>
+        </div>
+        <div class="segundoDivCarrito"></div>
+      </div>
+    </div>
+    
+  </header>
+  <main>
+    <section class="primerSection">
+      <div class="divFlechas">
+        <img src="../images/icon-previous.svg" alt="flecha anterior" class="flechas atras">
+        <img src="../images/icon-next.svg" alt="flecha siguiente" class="flechas siguiente">
+      </div>
+        <img src="../images/image-product-1.jpg" alt="imagen de una zapatilla" class="imagenesMobile activada" ></a>
+        <img src="../images/image-product-2.jpg" alt="imagen de una zapatilla" class="imagenesMobile" ></a>
+        <img src="../images/image-product-3.jpg" alt="imagen de una zapatilla" class="imagenesMobile" ></a>
+        <img src="../images/image-product-4.jpg" alt="imagen de una zapatilla" class="imagenesMobile" ></a>
+      <div class="divImagenes">
+        <div class="divIndividualImagenes">
+          <a href="../images/image-product-1.jpg" class="enlaceImagen" data-lightbox="roadtrip"><img src="../images/image-product-1-thumbnail.jpg" alt="imagen de una zapatilla" class="imagenCaja"></a>
+        </div>
+        <div class="divIndividualImagenes">
+          <a href="../images/image-product-2.jpg" class="enlaceImagen" data-lightbox="roadtrip"><img src="../images/image-product-2-thumbnail.jpg" alt="imagen de una zapatilla" class="imagenCaja"></a>
+        </div>
+        <div class="divIndividualImagenes">
+          <a href="../images/image-product-3.jpg" class="enlaceImagen" data-lightbox="roadtrip"><img src="../images/image-product-3-thumbnail.jpg" alt="imagen de una zapatilla" class="imagenCaja"></a>
+        </div>
+        <div class="divIndividualImagenes">
+          <a href="../images/image-product-4.jpg" class="enlaceImagen" data-lightbox="roadtrip"><img src="../images/image-product-4-thumbnail.jpg" alt="imagen de una zapatilla" class="imagenCaja"></a>
+        </div>
+      </div>
+      <!---->
+    </section>
+    <section class="segundoSection">
+      <small class="subtitulo">Sneaker Company</small>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="parrafo">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="divPrecios">
+        <div class="divPr">
+          <p class="precioUnitario">$125.00 <span class="descuento">50%</span></p>
+        </div>
+        <div>
+          <p class="precioViejo">$250.00</p>
+        </div>
+      </div>
+      <div class="divUltimo">
+        <div class="divSubcarrito">
+          <img src="../images/icon-minus.svg" alt="icono de menos" class="menos">
+          <p class="numero">0</p>
+          <img src="../images/icon-plus.svg" alt="icono de mas" class="mas">
+        </div>
+        <div class="divAnadirAlCarrito">
+          <img src="../images/icon-cart.svg" alt="imagen del carrito de compras" class="carritoDeCompras">
+          <p class="agregarCarrito">Add to cart</p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  <script src="../js/lightbox-plus-jquery.min.js"></script>
+  <script src="../js/lightbox.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+</html>
