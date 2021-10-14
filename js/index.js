@@ -1,9 +1,9 @@
-require('fslightbox');
 
-fsLightboxInstances['first-lightbox'].open(0);
+fsLightboxInstances['first-lightbox'].props.onOpen = () => console.log('Lightbox open!')
 fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');
 fsLightboxInstances['third-lightbox'].props.onOpen = () => console.log('Lightbox open!');
 fsLightboxInstances['fourth-lightbox'].props.onOpen = () => console.log('Lightbox open!');
+
 const $imagenesCarrousel = document.querySelectorAll(".imagenesMobile"),
     $numero = document.querySelector(".numero"),
     $segundoDivCarrito = document.querySelector(".segundoDivCarrito"),
