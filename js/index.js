@@ -1,3 +1,9 @@
+require('fslightbox');
+
+fsLightboxInstances['first-lightbox'].open(0);
+fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');
+fsLightboxInstances['third-lightbox'].props.onOpen = () => console.log('Lightbox open!');
+fsLightboxInstances['fourth-lightbox'].props.onOpen = () => console.log('Lightbox open!');
 const $imagenesCarrousel = document.querySelectorAll(".imagenesMobile"),
     $numero = document.querySelector(".numero"),
     $segundoDivCarrito = document.querySelector(".segundoDivCarrito"),
@@ -5,7 +11,7 @@ const $imagenesCarrousel = document.querySelectorAll(".imagenesMobile"),
     $elementosDelCarrito = document.querySelector(".elementosDelCarrito"),
     $imagenesMobile = document.querySelector(".imagenesMobile");
 
-console.log($imagenesMobile)
+
 
 let ultimoDiv = document.createElement("div");
     ultimoDiv.classList.add("comprarCarrito");
@@ -15,7 +21,7 @@ let j= 0;
 const carrusel = e => {
     if(e.target.matches(".atras")) (j<=0) ? j=3 : j--;
     if(e.target.matches(".siguiente")) (j>=$imagenesCarrousel.length-1) ? j=0 : j++;
-    for (let i = 0; i < $imagenesCarrousel.length; i++) { $imagenesCarrousel[i].style.display = "none" }
+    for (let i = 0; i < $imagenesCarrousel.length; i++) { $imagenesCarrousel[i].style.display = "none"}
     $imagenesCarrousel[j].style.display = "block";
 }
 

@@ -272,8 +272,13 @@ h1 {
     margin: 30px auto;
     color: #69707D;
 }
-
-@media all and (min-width:950px) {
+.cerrarLightbox {
+    display: none;
+}
+.divFlechasLightbox {
+    display: none;
+}
+@media all and (min-width:1000px) { /*cambiarlo a 1150px*/
     /*------------------------- HEADER -------------------------*/
     body {
         padding: 20px 100px;
@@ -364,7 +369,7 @@ h1 {
         margin: 0px;
     }
     .imagenCaja {
-        width: 100px;
+        width: 80px;
         border-radius: 10px;
     }
     .imagenCaja:hover {
@@ -387,6 +392,7 @@ h1 {
     .precioUnitario {
         margin-bottom: 0px;
         text-align: start;
+        font-size: 28px;
     }
     .precioViejo {
         margin: 0%;
@@ -412,18 +418,67 @@ h1 {
         margin-top: 50px;
     }
     .divSubcarrito {
-        width: 160px;
+        width: 120px;
     }
     .divAnadirAlCarrito {
         width: 100%;
         margin: 0%;
+        border-radius: 0px;
+        border-top-left-radius: 10px;
+        align-items: flex-start;
+    }
+    .divAnadirAlCarrito:hover {
+        border-radius: 10px;
+        opacity: 0.5;
+        text-align: center;
+        padding: 15px 0px 5px 0px;
+    }
+    .divAnadirAlCarrito:active {
+        height: 40px;
+        padding: 10px 0px 5px 0px;
+    }
+    .agregarCarrito {
+        margin-top: 0px;
     }
     .enlaceMenuMobile:hover {
-        padding-bottom: 35px ;
+        padding-bottom: 35px;
         border-bottom: 5px solid #FF7E1B;
     }
     .attribution {
         display: block;
+    }
+    .cerrarLightbox {
+        display: initial;
+    }
+    .divFlechasLightbox {
+        display: initial;
+    }
+    @media all and (min-width:1300px) {
+        body {
+            padding: 20px 150px;
+        }
+        .imagenCaja {
+            width: 90px;
+        }
+        main {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 300px 300px ;
+            grid-template-areas: 
+            "derecha izquierda1"
+            "derecha izquierda2";
+            padding: 10px 100px;
+            justify-items: center;
+        }
+        
+        .segundoSection {
+            margin-top: 20px;
+            width: 440px;
+        }
+        .divUltimo {
+            margin-top: 80px;
+        }
     }
 }
 
